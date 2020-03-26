@@ -1,0 +1,70 @@
+{
+    "name": "@tarojsx/library",
+    "version": "0.1.0",
+    "description": "Taro3 library",
+    "source": "src/index.ts",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "author": "colder",
+    "license": "MIT",
+    "keywords": [
+        "taro",
+        "taro3",
+        "library",
+        "components",
+        "react",
+        "reactjs",
+        "wx",
+        "weixin",
+        "wechat",
+        "weapp",
+        "wechat-mini-program",
+        "javascript",
+        "typescript"
+    ],
+    "files": [
+        "dist",
+        "style"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tarojsx/library.git"
+    },
+    "homepage": "https://github.com/tarojsx/library",
+    "bugs": {
+        "url": "https://github.com/tarojsx/library/issues"
+    },
+    "scripts": {
+        "start": "tsc --watch",
+        "prebuild": "rimraf dist tsconfig.tsbuildinfo",
+        "build": "tsc",
+        "prepublishOnly": "npm run build",
+        "release": "np"
+    },
+    "devDependencies": {
+        "@tarojs/components": "3.0.0-beta.1",
+        "@tarojs/taro": "3.0.0-beta.1",
+        "@types/react": "^16.9.25",
+        "@types/react-window": "^1.8.1",
+        "np": "^6.2.0",
+        "react": "^16.13.1",
+        "react-calendar": "^3.0.0",
+        "react-window": "^1.8.5",
+        "rimraf": "^3.0.2",
+        "taro-ui": "^2.2.4",
+        "tslib": "^1.11.1",
+        "typescript": "^3.8.3"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org",
+        "access": "public"
+    },
+    "np": {},
+    "prettier": {
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "printWidth": 120
+    }
+}
