@@ -18,7 +18,7 @@
         <img src="https://badgen.net/npm/dt/@tarojsx/library" alt="npm downloads" />
     </a>
     <a href="https://github.com/tarojsx/library/blob/master/package.json">
-        <img src="https://badgen.net/github/dependents-pkg/tarojsx/library" alt="npm downloads" />
+        <img src="https://badgen.net/github/dependents-pkg/tarojsx/library" alt="dependents" />
     </a>
     <a href="http://makeapullrequest.com">
         <img src="https://badgen.net/badge/PRs/welcome/green" alt="PRs welcome" />
@@ -87,8 +87,8 @@ const config = {
 ## 类库
 
 * [x] [react-window](docs/react-window.mdx)
-  * [x] [`FixedSizeList`]
-  * [x] [`VariableSizeList`]
+  * [x] `FixedSizeList`
+  * [x] `VariableSizeList`
 
 ## 支持
 
