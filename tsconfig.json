@@ -11,7 +11,6 @@
         "skipLibCheck": true,
         "sourceMap": true,
         "declaration": true,
-        "importHelpers": true,
         "jsx": "preserve",
         "incremental": true,
         "rootDir": "./src",

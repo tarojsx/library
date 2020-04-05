@@ -35,24 +35,24 @@
         "url": "https://github.com/tarojsx/library/issues"
     },
     "scripts": {
-        "start": "tsc --watch",
+        "start": "tsc -w --preserveWatchOutput",
         "prebuild": "rimraf dist tsconfig.tsbuildinfo",
         "build": "tsc",
         "prepublishOnly": "npm run build",
         "release": "np"
     },
     "devDependencies": {
-        "@tarojs/components": "3.0.0-beta.1",
-        "@tarojs/taro": "3.0.0-beta.1",
-        "@types/react": "^16.9.25",
+        "@tarojs/components": "3.0.0-beta.2",
+        "@tarojs/taro": "3.0.0-beta.2",
+        "@types/react": "^16.9.32",
         "@types/react-window": "^1.8.1",
         "np": "^6.2.0",
         "react": "^16.13.1",
-        "react-calendar": "^3.0.0",
+        "react-calendar": "^3.0.1",
+        "react-vtree": "^1.0.2",
         "react-window": "^1.8.5",
         "rimraf": "^3.0.2",
-        "taro-ui": "^2.2.4",
-        "tslib": "^1.11.1",
+        "taro-ui": "^2.3.2",
         "typescript": "^3.8.3"
     },
     "publishConfig": {
