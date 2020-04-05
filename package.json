@@ -42,6 +42,8 @@
         "release": "np"
     },
     "devDependencies": {
+        "@commitlint/cli": "^8.3.5",
+        "@commitlint/config-conventional": "^8.3.4",
         "@tarojs/components": "3.0.0-beta.2",
         "@tarojs/taro": "3.0.0-beta.2",
         "@types/react": "^16.9.32",
@@ -54,6 +56,11 @@
         "rimraf": "^3.0.2",
         "taro-ui": "^2.3.2",
         "typescript": "^3.8.3"
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -x @commitlint/config-conventional -E HUSKY_GIT_PARAMS"
+        }
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org",
