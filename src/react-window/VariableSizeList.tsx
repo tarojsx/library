@@ -1,13 +1,35 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { View } from '@tarojs/components'
-import { VariableSizeList as List, VariableSizeListProps } from 'react-window'
+import { VariableSizeList as List, VariableSizeListProps as ListProps } from 'react-window'
 
-import { useOuterScrollView } from './useOuterScrollView'
+import { useOuterScrollView, OuterScrollViewProps } from './useOuterScrollView'
 
-export { VariableSizeListProps } from 'react-window'
-
-export const VariableSizeList: React.FC<VariableSizeListProps> = props => {
-    const OuterScrollView = useOuterScrollView({ width: props.width, height: props.height })
-
-    return <List {...props} outerElementType={OuterScrollView} innerElementType={View} />
+export interface VariableSizeListProps extends ListProps {
+    /** 传给 outer element 的属性 */
+    outerElementProps?: OuterScrollViewProps
 }
+
+export const VariableSizeList = React.forwardRef<List, VariableSizeListProps>((props, ref) => {
+    const { outerElementProps, ...listProps } = props
+    const OuterScrollView = useOuterScrollView({
+        width: props.width,
+        height: props.height,
+        ...outerElementProps,
+    })
+
+    useEffect(() => {}, [])
+
+    return <List ref={ref} outerElementType={OuterScrollView} innerElementType={View} {...listProps} />
+})
+// export const VariableSizeList: React.FC<VariableSizeListProps> = props => {
+//     const { outerElementProps, ...listProps } = props
+//     const OuterScrollView = useOuterScrollView({
+//         width: props.width,
+//         height: props.height,
+//         ...outerElementProps,
+//     })
+
+//     useEffect(() => {}, [])
+
+//     return <List outerElementType={OuterScrollView} innerElementType={View} {...listProps} />
+// }

@@ -5,7 +5,6 @@ import { ScrollViewProps } from '@tarojs/components/types/ScrollView'
 export interface OuterScrollViewProps extends Omit<ScrollViewProps, 'onScroll'> {
     width?: number | string
     height?: number | string
-    onScroll(event: React.UIEvent): void
 }
 
 /**
@@ -17,16 +16,16 @@ export const OuterScrollView = React.forwardRef<typeof ScrollView, OuterScrollVi
     props,
     /* Taro legacy ref type */ ref: any
 ) => {
-    const { width, height, onScroll, ...rest } = props
+    const { width, height, ...rest } = props
 
     const handleScroll = useCallback(
         event => {
-            onScroll({
+            rest['onScroll']({
                 ...event,
                 currentTarget: { ...event.detail, clientWidth: width, clientHeight: height },
             })
         },
-        [width, height]
+        [width, height, rest['onScroll']]
     )
 
     return <ScrollView ref={ref} scrollX scrollY onScroll={handleScroll} {...rest} />
