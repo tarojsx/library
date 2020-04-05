@@ -86,7 +86,9 @@ const config = {
 
 ## 类库
 
-* [x] [react-window](docs/react-window.mdx)
+* [x] [react-vtree](docs/react-vtree.mdx) - 虚拟滚动树
+  * [x] `FixedSizeTree`
+* [x] [react-window](docs/react-window.mdx) - 虚拟滚动
   * [x] `FixedSizeList`
   * [x] `VariableSizeList`
 
