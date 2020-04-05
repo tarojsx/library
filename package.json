@@ -1,6 +1,6 @@
 {
     "name": "@tarojsx/library",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "description": "Taro3 library",
     "source": "src/index.ts",
     "main": "dist/index.js",
