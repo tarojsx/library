@@ -54,6 +54,7 @@
         "react-window": "^1.8.5",
         "rimraf": "^3.0.2",
         "taro-ui": "^2.3.2",
+        "tslib": "^1.11.1",
         "typescript": "^3.8.3"
     },
     "husky": {
