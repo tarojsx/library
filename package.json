@@ -47,15 +47,17 @@
         "@tarojs/components": "3.0.0-beta.4",
         "@tarojs/taro": "3.0.0-beta.4",
         "@types/react": "^16.9.34",
-        "@types/react-window": "^1.8.2",
         "np": "^6.2.1",
         "react-calendar": "^3.0.1",
-        "react-vtree": "^1.0.2",
-        "react-window": "^1.8.5",
         "rimraf": "^3.0.2",
         "taro-ui": "^2.3.3",
-        "tslib": "^1.11.1",
         "typescript": "^3.8.3"
+    },
+    "dependencies": {
+        "@types/react-window": "^1.8.2",
+        "react-vtree": "^1.0.2",
+        "react-window": "^1.8.5",
+        "tslib": "^1.11.1"
     },
     "husky": {
         "hooks": {
