@@ -311,7 +311,15 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-"@types/react-window@^1.8.2":
+"@types/react-window-infinite-loader@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npm.taobao.org/@types/react-window-infinite-loader/download/@types/react-window-infinite-loader-1.0.3.tgz#fade6e7c625a348e83c4e1f0c897736537bc7f8c"
+  integrity sha1-+t5ufGJaNI6DxOHwyJdzZTe8f4w=
+  dependencies:
+    "@types/react" "*"
+    "@types/react-window" "*"
+
+"@types/react-window@*", "@types/react-window@^1.8.2":
   version "1.8.2"
   resolved "https://registry.npm.taobao.org/@types/react-window/download/@types/react-window-1.8.2.tgz#a5a6b2762ce73ffaab7911ee1397cf645f2459fe"
   integrity sha1-paaydiznP/qreRHuE5fPZF8kWf4=
@@ -2277,6 +2285,11 @@ react-vtree@^1.0.2:
   integrity sha1-IT/nMdpdAbqk24ACnp+lPILZKME=
   dependencies:
     "@babel/runtime" "^7.8.3"
+
+react-window-infinite-loader@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npm.taobao.org/react-window-infinite-loader/download/react-window-infinite-loader-1.0.5.tgz#6fe094d538a88978c2c9b623052bc50cb28c2abc"
+  integrity sha1-b+CU1TioiXjCybYjBSvFDLKMKrw=
 
 react-window@^1.8.5:
   version "1.8.5"

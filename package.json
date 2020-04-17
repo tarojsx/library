@@ -55,8 +55,10 @@
     },
     "dependencies": {
         "@types/react-window": "^1.8.2",
+        "@types/react-window-infinite-loader": "^1.0.3",
         "react-vtree": "^1.0.2",
         "react-window": "^1.8.5",
+        "react-window-infinite-loader": "^1.0.5",
         "tslib": "^1.11.1"
     },
     "husky": {
