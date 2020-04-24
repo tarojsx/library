@@ -6,23 +6,17 @@ sidebar_label: react-window
 
 ## [react-window](https://github.com/bvaughn/react-window)
 
-### 安装
-
-`npm i react-window`
-
-`npm i -D @types/react-window`
-
 ### 使用
 
 ```jsx
 import React from 'react'
 import Taro from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import { FixedSizeList } from 'react-window'
+import { FixedSizeList } from '@tarojsx/library'
 
 const { windowWidth, windowHeight } = Taro.getSystemInfoSync()
 
-const Example = () => (
+const Demo = () => (
     <FixedSizeList width={windowWidth} height={windowHeight} itemCount={1000} itemSize={35}>
         {({ index, style }) => <View style={style}>Row {index}</View>}
     </FixedSizeList>

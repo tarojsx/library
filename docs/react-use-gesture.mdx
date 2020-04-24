@@ -1,0 +1,30 @@
+---
+id: react-use-gesture
+title: react-use-gesture
+sidebar_label: react-use-gesture
+---
+
+## [react-use-gesture](https://github.com/react-spring/react-use-gesture)
+
+### 使用
+
+```jsx
+import React from 'react'
+import { View } from '@tarojs/components'
+import { useDrag } from 'react-use-gesture'
+import { useGestureConfig } from '@tarojsx/library'
+
+const Demo = () => {
+    const [gestureConfig, containerProps] = useGestureConfig()
+
+    const bind = useDrag(({ down, movement: [mx, my], direction: [xDir, yDir], distance, cancel }) => {
+        console.log('按下', down)
+        console.log('轴移动距离', mx, my)
+        console.log('轴移动方向', xDir, yDir)
+        console.log('直线移动距离', distance)
+        console.log('取消拖动操作', cancel)
+    }, gestureConfig)
+
+    return <View {...containerProps}>{<View {...bind()} />}</View>
+}
+```

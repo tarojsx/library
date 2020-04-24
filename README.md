@@ -86,11 +86,18 @@ const config = {
 
 ## 类库
 
-* [x] [react-vtree](docs/react-vtree.mdx) - 虚拟滚动树
-  * [x] `FixedSizeTree`
+### 虚拟滚动
+
 * [x] [react-window](docs/react-window.mdx) - 虚拟滚动
   * [x] `FixedSizeList`
   * [x] `VariableSizeList`
+* [x] [react-vtree](docs/react-vtree.mdx) - 虚拟滚动树
+  * [x] `FixedSizeTree`
+
+### 交互动画
+
+* [x] [react-spring](docs/react-spring.mdx) - 弹性物理动画
+* [x] [react-use-gesture](docs/react-use-gesture.mdx) - 触摸手势
 
 ## 支持
 
