@@ -28,3 +28,12 @@ export function uuid(len = 8, radix = 16): string {
 
     return value.join('')
 }
+
+/**
+ * 替换 camelCase 为 dashedCase.
+ *
+ * @see https://github.com/NervJS/taro/blob/next/packages/shared/src/utils.ts
+ */
+export function toDashed(s: string) {
+    return s.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase()
+}
