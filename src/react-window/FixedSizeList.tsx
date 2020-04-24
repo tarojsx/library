@@ -2,15 +2,16 @@ import React from 'react'
 import { View } from '@tarojs/components'
 import { FixedSizeList as List, FixedSizeListProps as ListProps } from 'react-window'
 
-import { useOuterScrollView, OuterScrollViewProps } from './useOuterScrollView'
+import { OuterScrollView } from './OuterScrollView'
+// import { useOuterScrollView, OuterScrollViewProps } from './useOuterScrollView'
 
 export interface FixedSizeListProps extends ListProps {
-    outerElementProps?: OuterScrollViewProps
+    // outerElementProps?: OuterScrollViewProps
 }
 
-export const FixedSizeList: React.FC<FixedSizeListProps> = props => {
-    const { outerElementProps, ...listProps } = props
-    const OuterScrollView = useOuterScrollView({ width: props.width, height: props.height, ...outerElementProps })
+export const FixedSizeList = React.forwardRef<List, FixedSizeListProps>((props, ref) => {
+    // const { outerElementProps, ...listProps } = props
+    // const OuterScrollView = useOuterScrollView({ width: props.width, height: props.height, ...outerElementProps })
 
-    return <List outerElementType={OuterScrollView} innerElementType={View} {...listProps} />
-}
+    return <List ref={ref} outerElementType={OuterScrollView} innerElementType={View} {...props} />
+})
