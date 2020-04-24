@@ -1,0 +1,28 @@
+---
+id: react-spring
+title: react-spring
+sidebar_label: react-spring
+---
+
+## [react-spring](https://github.com/react-spring/react-spring)
+
+### 使用
+
+```jsx
+import React from 'react'
+import { useSpring } from 'react-spring'
+import { animated } from '@tarojsx/library'
+
+const Demo = () => {
+    const spring = useSpring({
+        to: async (next, cancel) => {
+            while (true) {
+                await next({ opacity: 1, color: '#ffaaee' })
+                await next({ opacity: 0.5, color: 'rgb(14,26,19)' })
+            }
+        },
+    })
+
+    return <animated.View style={spring}>Hello spring</animated.View>
+}
+```

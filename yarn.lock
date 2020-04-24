@@ -30,7 +30,7 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.3.1", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7":
   version "7.9.2"
   resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.9.2.tgz?cache=0&sync_timestamp=1584800073233&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.9.2.tgz#d90df0583a3a252f09aaa619665367bae518db06"
   integrity sha1-2Q3wWDo6JS8JqqYZZlNnuuUY2wY=
@@ -175,6 +175,91 @@
     graceful-fs "^4.1.3"
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
+
+"@react-spring/addons@9.0.0-canary.809.5.f01ecc2":
+  version "9.0.0-canary.809.5.f01ecc2"
+  resolved "https://registry.npm.taobao.org/@react-spring/addons/download/@react-spring/addons-9.0.0-canary.809.5.f01ecc2.tgz#087a4c43732bd7ecbf7bf0cba595cb2cbc874ef4"
+  integrity sha1-CHpMQ3Mr1+y/e/DLpZXLLLyHTvQ=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    "@react-spring/animated" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/core" "9.0.0-canary.809.5.f01ecc2"
+    use-memo-one "^1.1.0"
+
+"@react-spring/animated@9.0.0-canary.809.5.f01ecc2":
+  version "9.0.0-canary.809.5.f01ecc2"
+  resolved "https://registry.npm.taobao.org/@react-spring/animated/download/@react-spring/animated-9.0.0-canary.809.5.f01ecc2.tgz#432171eb77f19cca7968e162ffcbff8a59fe956e"
+  integrity sha1-QyFx63fxnMp5aOFi/8v/iln+lW4=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    "@react-spring/shared" "9.0.0-canary.809.5.f01ecc2"
+
+"@react-spring/core@9.0.0-canary.809.5.f01ecc2":
+  version "9.0.0-canary.809.5.f01ecc2"
+  resolved "https://registry.npm.taobao.org/@react-spring/core/download/@react-spring/core-9.0.0-canary.809.5.f01ecc2.tgz#7a3e22017c5fd43937706ca7b8aacb5c72a969d3"
+  integrity sha1-ej4iAXxf1Dk3cGynuKrLXHKpadM=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    "@react-spring/animated" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/shared" "9.0.0-canary.809.5.f01ecc2"
+    use-memo-one "^1.1.0"
+
+"@react-spring/konva@9.0.0-canary.809.5.f01ecc2":
+  version "9.0.0-canary.809.5.f01ecc2"
+  resolved "https://registry.npm.taobao.org/@react-spring/konva/download/@react-spring/konva-9.0.0-canary.809.5.f01ecc2.tgz#09e938a650a6522d857f0434a551d69bf0aa4e3a"
+  integrity sha1-Cek4plCmUi2FfwQ0pVHWm/CqTjo=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    "@react-spring/animated" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/core" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/shared" "9.0.0-canary.809.5.f01ecc2"
+
+"@react-spring/native@9.0.0-canary.809.5.f01ecc2":
+  version "9.0.0-canary.809.5.f01ecc2"
+  resolved "https://registry.npm.taobao.org/@react-spring/native/download/@react-spring/native-9.0.0-canary.809.5.f01ecc2.tgz#eaef7cca7f95922adff1603b873f55e988aa0ea6"
+  integrity sha1-6u98yn+Vkirf8WA7hz9V6YiqDqY=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    "@react-spring/animated" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/core" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/shared" "9.0.0-canary.809.5.f01ecc2"
+
+"@react-spring/shared@9.0.0-canary.809.5.f01ecc2":
+  version "9.0.0-canary.809.5.f01ecc2"
+  resolved "https://registry.npm.taobao.org/@react-spring/shared/download/@react-spring/shared-9.0.0-canary.809.5.f01ecc2.tgz#f1a4a69a9d425f53a8ff397283728d19b44828aa"
+  integrity sha1-8aSmmp1CX1Oo/zlyg3KNGbRIKKo=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+
+"@react-spring/three@9.0.0-canary.809.5.f01ecc2":
+  version "9.0.0-canary.809.5.f01ecc2"
+  resolved "https://registry.npm.taobao.org/@react-spring/three/download/@react-spring/three-9.0.0-canary.809.5.f01ecc2.tgz#17e288a7a65e07d7e164da022a15874d29367f6e"
+  integrity sha1-F+KIp6ZeB9fhZNoCKhWHTSk2f24=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    "@react-spring/animated" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/core" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/shared" "9.0.0-canary.809.5.f01ecc2"
+
+"@react-spring/web@9.0.0-canary.809.5.f01ecc2":
+  version "9.0.0-canary.809.5.f01ecc2"
+  resolved "https://registry.npm.taobao.org/@react-spring/web/download/@react-spring/web-9.0.0-canary.809.5.f01ecc2.tgz#aa13c8facc92541262fa4f7c317270ba9f92c370"
+  integrity sha1-qhPI+sySVBJi+k98MXJwup+Sw3A=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    "@react-spring/animated" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/core" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/shared" "9.0.0-canary.809.5.f01ecc2"
+
+"@react-spring/zdog@9.0.0-canary.809.5.f01ecc2":
+  version "9.0.0-canary.809.5.f01ecc2"
+  resolved "https://registry.npm.taobao.org/@react-spring/zdog/download/@react-spring/zdog-9.0.0-canary.809.5.f01ecc2.tgz#81712d9715a67da23767e3be1489dddeb7cc9af4"
+  integrity sha1-gXEtlxWmfaI3Z+O+FInd3rfMmvQ=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    "@react-spring/animated" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/core" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/shared" "9.0.0-canary.809.5.f01ecc2"
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
@@ -1875,10 +1960,10 @@ normalize-url@^4.1.0:
   resolved "https://registry.npm.taobao.org/normalize-url/download/normalize-url-4.5.0.tgz#453354087e6ca96957bd8f5baf753f5982142129"
   integrity sha1-RTNUCH5sqWlXvY9br3U/WYIUISk=
 
-np@^6.2.1:
-  version "6.2.1"
-  resolved "https://registry.npm.taobao.org/np/download/np-6.2.1.tgz#b22fcb53708b213056465a86c48197395d84d836"
-  integrity sha1-si/LU3CLITBWRlqGxIGXOV2E2DY=
+np@^6.2.2:
+  version "6.2.2"
+  resolved "https://registry.npm.taobao.org/np/download/np-6.2.2.tgz?cache=0&sync_timestamp=1587623968569&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnp%2Fdownload%2Fnp-6.2.2.tgz#a63b19d00f444361d4c0103cc4c89263c3538fc5"
+  integrity sha1-pjsZ0A9EQ2HUwBA8xMiSY8NTj8U=
   dependencies:
     "@samverschueren/stream-to-observable" "^0.3.0"
     any-observable "^0.5.0"
@@ -2278,6 +2363,25 @@ react-is@^16.8.1:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
+
+react-spring@^9.0.0-canary.808.17.55c5691:
+  version "9.0.0-canary.809.5.f01ecc2"
+  resolved "https://registry.npm.taobao.org/react-spring/download/react-spring-9.0.0-canary.809.5.f01ecc2.tgz#0ef2ec2297105df3e8a5fea297c8fa0df423e89c"
+  integrity sha1-DvLsIpcQXfPopf6il8j6DfQj6Jw=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    "@react-spring/addons" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/core" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/konva" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/native" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/three" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/web" "9.0.0-canary.809.5.f01ecc2"
+    "@react-spring/zdog" "9.0.0-canary.809.5.f01ecc2"
+
+react-use-gesture@^7.0.15:
+  version "7.0.15"
+  resolved "https://registry.npm.taobao.org/react-use-gesture/download/react-use-gesture-7.0.15.tgz#93c651e916a31cfb12d079e7fa1543d5b0511e07"
+  integrity sha1-k8ZR6RajHPsS0Hnn+hVD1bBRHgc=
 
 react-vtree@^1.0.2:
   version "1.0.2"
@@ -2954,6 +3058,11 @@ url-regex@^5.0.0:
   dependencies:
     ip-regex "^4.1.0"
     tlds "^1.203.0"
+
+use-memo-one@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.npm.taobao.org/use-memo-one/download/use-memo-one-1.1.1.tgz?cache=0&sync_timestamp=1562652934593&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuse-memo-one%2Fdownload%2Fuse-memo-one-1.1.1.tgz#39e6f08fe27e422a7d7b234b5f9056af313bd22c"
+  integrity sha1-Oebwj+J+Qip9eyNLX5BWrzE70iw=
 
 util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
