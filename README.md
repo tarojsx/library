@@ -62,6 +62,8 @@ _当前代码提交频繁, 一些特性时有变化._
 
 ## 使用
 
+部分组件需要用到 polyfill.
+
 更新 config/index.js 配置如下
 
 ```js
@@ -70,21 +72,15 @@ const { TaroProvidePlugin } = require('@tarojsx/polyfill/dist/plugins')
 const config = {
     mini: {
         webpackChain(chain, webpack) {
-            // 注入默认 polyfills (详见下方列表)
             chain
                 .plugin('taroProviderPlugin')
                 .use(TaroProvidePlugin)
-
-            // 注入更多 polyfills
-            // chain
-            //     .plugin('taroProviderPlugin')
-            //     .use(TaroProvidePlugin, [['default', 'Intl']])
         }
     }
 }
 ```
 
-## 类库
+## 模块
 
 ### 虚拟滚动
 
