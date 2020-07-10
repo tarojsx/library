@@ -23,8 +23,8 @@ for (const key of Object.keys(elements)) {
     animated[key] = animated(element)
 }
 
-Globals.assign({
-    defaultElement: View,
-})
+// Globals.assign({
+//     defaultElement: View,
+// })
 
 export { animated as a, animated }

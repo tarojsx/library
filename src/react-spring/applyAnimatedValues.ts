@@ -4,7 +4,7 @@ import { toDashed } from '../utils'
 
 type Instance = HTMLDivElement & { style: any; [key: string]: any }
 
-const applyAnimatedValuesWeb = Globals.applyAnimatedValues
+// const applyAnimatedValuesWeb = Globals.applyAnimatedValues
 /**
  * TaroElement 设置 style 属性比设置字符串 cssText 理论上性能更高, 这种方式可以跳过 react setState, 但是逃不过小程序 setData.
  *
@@ -35,5 +35,5 @@ export const applyAnimatedValues = (
         instance.setAttribute('style', styleString)
     }
 
-    applyAnimatedValuesWeb(instance, attributes)
+    // applyAnimatedValuesWeb(instance, attributes)
 }
