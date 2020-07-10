@@ -31,35 +31,31 @@ describe('weapp', () => {
         miniProgram && (await miniProgram.close())
     })
 
-    describe('antv', () => {
-        describe('f2', () => {
-            let page: Page
+    describe('antv f2', () => {
+        let page: Page
 
-            beforeAll(async () => {
-                page = await miniProgram.navigateTo('/pages/antv/f2')
-            })
+        beforeAll(async () => {
+            page = await miniProgram.navigateTo('/pages/antv-f2')
+        })
 
-            it('canvas', async () => {
-                let canvas = await page.$('canvas')
+        it('canvas', async () => {
+            let canvas = await page.$('canvas')
 
-                expect(canvas).toBeDefined()
-            })
+            expect(canvas).toBeDefined()
         })
     })
 
     describe('react-spring', () => {
-        describe('animated', () => {
-            let page: Page
+        let page: Page
 
-            beforeAll(async () => {
-                page = await miniProgram.navigateTo('/pages/react-spring/animated')
-            })
+        beforeAll(async () => {
+            page = await miniProgram.navigateTo('/pages/react-spring')
+        })
 
-            it('#number', async () => {
-                let el = await page.$('#number')
+        it('#number', async () => {
+            let el = await page.$('#number')
 
-                await expect(el.text()).resolves.toBe('1')
-            })
+            await expect(el.text()).resolves.toBe('1')
         })
     })
 })

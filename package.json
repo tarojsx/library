@@ -39,7 +39,7 @@
         "start": "tsc -w --preserveWatchOutput",
         "prebuild": "rimraf dist tsconfig.tsbuildinfo",
         "build": "tsc",
-        "pretest": "npm run build && taro build --type weapp",
+        "pretest": "taro build --type weapp",
         "test": "jest",
         "test:watch": "jest --watch",
         "prepublishOnly": "npm run build",
