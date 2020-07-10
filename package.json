@@ -1,6 +1,6 @@
 {
     "name": "@tarojsx/library",
-    "version": "0.30.0",
+    "version": "0.30.1",
     "description": "Taro3 library",
     "source": "src/index.ts",
     "main": "dist/index.js",
@@ -61,13 +61,13 @@
     },
     "devDependencies": {
         "@babel/preset-typescript": "^7.10.4",
-        "@minapp/wx": "^2.2.1",
         "@commitlint/cli": "^9.0.1",
         "@commitlint/config-conventional": "^9.0.1",
+        "@minapp/wx": "^2.2.1",
+        "@tarojs/components": "^3.0.2",
         "@tarojs/mini-runner": "^3.0.2",
         "@tarojs/react": "^3.0.2",
         "@tarojs/runtime": "^3.0.2",
-        "@tarojs/components": "^3.0.2",
         "@tarojs/taro": "^3.0.2",
         "@tarojs/webpack-runner": "^3.0.2",
         "@types/async-retry": "^1.4.2",
