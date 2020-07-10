@@ -1,0 +1,80 @@
+{
+	"miniprogramRoot": "test/dist/",
+	"projectname": "tarojsx-library-test",
+	"appid": "touristappid",
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"enhance": false,
+		"postcss": false,
+		"preloadBackgroundData": false,
+		"minified": false,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": false,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "AntV F2",
+					"pathName": "pages/antv-f2",
+					"scene": null
+				},
+				{
+					"id": 0,
+					"name": "React Spring",
+					"pathName": "pages/react-spring",
+					"scene": null
+				},
+				{
+					"id": 0,
+					"name": "React Use Gesture",
+					"pathName": "pages/react-use-gesture",
+					"scene": null
+				}
+			]
+		}
+	}
+}

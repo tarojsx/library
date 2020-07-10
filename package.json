@@ -39,12 +39,19 @@
         "start": "tsc -w --preserveWatchOutput",
         "prebuild": "rimraf dist tsconfig.tsbuildinfo",
         "build": "tsc",
+        "pretest": "npm run build && taro build --type weapp",
+        "test": "jest",
+        "test:watch": "jest --watch",
         "prepublishOnly": "npm run build",
         "release": "np"
     },
     "dependencies": {
+        "@antv/f2": "^3.7.0",
+        "@tarojsx/polyfill": "^0.16.0",
         "@types/react-window": "^1.8.2",
         "@types/react-window-infinite-loader": "^1.0.3",
+        "async-retry": "^1.3.1",
+        "fast-deep-equal": "^3.1.3",
         "react-spring": "^9.0.0-rc.3",
         "react-use-gesture": "^7.0.15",
         "react-vtree": "^1.0.2",
@@ -53,16 +60,38 @@
         "tslib": "^2.0.0"
     },
     "devDependencies": {
-        "@commitlint/cli": "^8.3.5",
-        "@commitlint/config-conventional": "^8.3.4",
-        "@tarojs/components": "^3.0.0-rc.0",
-        "@tarojs/taro": "^3.0.0-rc.0",
-        "@types/react": "^16.9.35",
-        "np": "^6.2.3",
+        "@babel/preset-typescript": "^7.10.4",
+        "@minapp/wx": "^2.2.1",
+        "@commitlint/cli": "^9.0.1",
+        "@commitlint/config-conventional": "^9.0.1",
+        "@tarojs/mini-runner": "^3.0.2",
+        "@tarojs/react": "^3.0.2",
+        "@tarojs/runtime": "^3.0.2",
+        "@tarojs/components": "^3.0.2",
+        "@tarojs/taro": "^3.0.2",
+        "@tarojs/webpack-runner": "^3.0.2",
+        "@types/async-retry": "^1.4.2",
+        "@types/classnames": "^2.2.10",
+        "@types/jest": "^26.0.3",
+        "@types/react": "^16.9.41",
+        "babel-preset-taro": "^3.0.0-rc.6",
+        "jest": "^26.1.0",
+        "miniprogram-automator": "^0.9.1",
+        "np": "^6.3.1",
+        "react": "^16.13.1",
         "react-calendar": "^3.1.0",
         "rimraf": "^3.0.2",
         "taro-ui": "^2.3.4",
-        "typescript": "^3.9.3"
+        "typescript": "^3.9.6",
+        "webpack": "^4.43.0",
+        "webpack-chain": "^6.4.0"
+    },
+    "jest": {
+        "testRegex": "/test/.*\\.test\\.[t]sx?$",
+        "watchPathIgnorePatterns": [
+            ".+\\.js(on)$",
+            "/config|dist|src/"
+        ]
     },
     "husky": {
         "hooks": {
