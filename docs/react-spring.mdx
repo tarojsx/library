@@ -8,15 +8,14 @@ sidebar_label: react-spring
 
 ### 需求
 
-- `requestAnimationFrame`
-- `performance.now`
+-   `requestAnimationFrame`
+-   `performance.now`
 
 ### 使用
 
 ```jsx
 import React from 'react'
-import { useSpring } from 'react-spring'
-import { animated } from '@tarojsx/library'
+import { animated, useSpring } from '@tarojsx/library/dist/react-spring'
 
 const Demo = () => {
     const spring = useSpring({
@@ -31,3 +30,69 @@ const Demo = () => {
     return <animated.View style={spring}>Hello spring</animated.View>
 }
 ```
+
+import { animated, useSpring } from '@tarojsx/library/dist/react-spring'
+import { View } from '@tarojs/components'
+import { UI } from '@/ui'
+
+<UI phone title="Spring">
+    {() => {
+        const colorfulSpring = useSpring({
+            to: async (next, cancel) => {
+                while (true) {
+                    await next({ opacity: 1, color: '#ffaaee', fontSize: 60, textAlign: 'center' })
+                    await next({ opacity: 0.5, color: 'rgb(14,26,19)' })
+                }
+            },
+        })
+        const numberSpring = useSpring({
+            to: async (next) => {
+                while (true) {
+                    await next({ number: 1 })
+                    await next({ number: 0 })
+                }
+            },
+        })
+        const scriptSpring = useSpring({
+            from: {
+                position: 'relative',
+                willChange: 'width, height, left, top',
+                left: '0%',
+                top: '0%',
+                width: '0%',
+                height: '0%',
+                background: 'lightgreen',
+            },
+            to: async (next) => {
+                while (1) {
+                    await next({ left: '0%', top: '0%', width: '100%', height: '100%', background: 'lightblue' })
+                    await next({ height: '50%', background: 'lightgreen' })
+                    await next({ width: '50%', left: '50%', background: 'lightgoldenrodyellow' })
+                    await next({ top: '0%', height: '100%', background: 'lightpink' })
+                    await next({ top: '50%', height: '50%', background: 'lightsalmon' })
+                    await next({ width: '100%', left: '0%', background: 'lightcoral' })
+                    await next({ width: '50%', background: 'lightseagreen' })
+                    await next({ top: '0%', height: '100%', background: 'lightskyblue' })
+                    await next({ width: '100%', background: 'lightslategrey' })
+                }
+            },
+        })
+        return (
+            <View>
+                <animated.View style={colorfulSpring}>Hello spring</animated.View>
+                <animated.View style={{ textAlign: 'center' }}>{numberSpring.number}</animated.View>
+                <View
+                    style={{
+                        position: 'relative',
+                        overflow: 'hidden',
+                        width: '750px',
+                        height: '750px',
+                        backgroundColor: '#f0f0f0',
+                    }}
+                >
+                    <animated.View style={scriptSpring} />
+                </View>
+            </View>
+        )
+    }}
+</UI>

@@ -28,7 +28,7 @@
 <div align="center">
     Built with :purple_heart: by
     <a href="https://github.com/cncolder">@Colder</a> and
-    <a href="https://github.com/tarojsx/ui/graphs/contributors">
+    <a href="https://github.com/tarojsx/library/graphs/contributors">
         Contributors
     </a>
     <div align="center">
@@ -82,6 +82,10 @@ const config = {
 
 ## 模块
 
+### 图表
+
+* [x] [AntV F2](docs/antv-f2.mdx) - 让数据栩栩如生
+
 ### 虚拟滚动
 
 * [x] [react-window](docs/react-window.mdx) - 虚拟滚动
@@ -98,6 +102,13 @@ const config = {
 ## 支持
 
 欢迎各种形式的支持. 至少可以给颗星 :star:
+
+### 测试步骤
+
+1. 打开微信开发者工具 CLI/HTTP 调用功能，设置 - 安全设置 - 服务端口
+2. 导入项目，目录指向当前项目文件夹。
+3. 运行 `npm run test`
+4. 如果提示 `Failed to launch wechat web devTools`，请先退出微信开发者工具。
 
 ## License
 
