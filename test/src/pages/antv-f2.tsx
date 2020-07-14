@@ -51,10 +51,7 @@ export default () => {
                 }
             </F2>
 
-            <F2
-                style={f2style}
-                data={data2}
-            >
+            <F2 style={f2style} data={data2}>
                 {({ chart, data }) => {
                     chart.source(data)
                     chart.coord('polar')
