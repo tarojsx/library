@@ -12,7 +12,7 @@ sidebar_label: AntV F2
 
 ### 使用
 
-```jsx
+```jsx title="默认全量导入 F2"
 import React from 'react'
 import { F2 } from '@tarojsx/library/dist/antv'
 
@@ -47,6 +47,27 @@ const Demo = () => {
 }
 ```
 
+```jsx title="按需引用 F2"
+import React from 'react'
+import { Chart, Global } from '@antv/f2/es/core'
+import { F2Core } from '@tarojsx/library/dist/antv/F2Core'
+
+require('@antv/f2/es/coord/polar')
+require('@antv/f2/es/component/guide/text')
+Chart.plugins.register(require('@antv/f2/es/plugin/guide'))
+
+const Demo = () => {
+    return (
+        <F2Core style={{ width: '100vw', height: '50vh' }} config={{ Chart, Global }} data={[]}>
+            {({ chart, data }) => {
+                chart.source(data)
+                chart.render()
+            }}
+        </F2Core>
+    )
+}
+```
+
 import { F2 } from '@tarojsx/library/dist/antv'
 import { UI } from '@/ui'
 
@@ -72,3 +93,12 @@ import { UI } from '@/ui'
         )
     }}
 </UI>
+
+| 参数        | 说明                                                                                      | 类型                      | 默认值 |
+| ----------- | ----------------------------------------------------------------------------------------- | ------------------------- | ------ |
+| className?  |                                                                                           | string                    |        |
+| style?      |                                                                                           | {}                        |        |
+| config?     | 图表配置, [参考 Chart](https://f2.antv.vision/zh/docs/api/chart/chart#%E5%8F%82%E6%95%B0) | `{}`                      |        |
+| data        | 图表数据                                                                                  | `[]`                      |        |
+| fontFamily? | 字体                                                                                      | `string`                  |        |
+| children    | 图表渲染逻辑                                                                              | `({chart, data}) => void` |        |
