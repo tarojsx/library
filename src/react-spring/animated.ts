@@ -23,8 +23,9 @@ for (const key of Object.keys(elements)) {
     animated[key] = animated(element)
 }
 
-// Globals.assign({
-//     defaultElement: View,
-// })
+Globals.assign({
+    // BUG 只有产品环境编译后才会调用 willAdvance, 开发环境发现不了这个 BUG.
+    willAdvance: () => {},
+})
 
 export { animated as a, animated }
